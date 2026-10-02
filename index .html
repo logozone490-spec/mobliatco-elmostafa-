@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موبلياتكو المصطفى للأثاث والديكور | دمياط</title>
+    <!-- Google Fonts: Cairo & Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Tajawal:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: {
+                            DEFAULT: '#1a1e24',
+                            light: '#252a32',
+                            dark: '#121519'
+                        },
+                        gold: {
+                            DEFAULT: '#c5a059',
+                            light: '#dfbe7a',
+                            dark: '#9e7d3b',
+                            soft: 'rgba(197, 160, 89, 0.15)'
+                        },
+                        cream: {
+                            DEFAULT: '#f8f6f0',
+                            dark: '#eee9dd'
+                        }
+                    },
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        tajawal: ['Tajawal', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8f6f0;
+            color: #1a1e24;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #dfbe7a 0%, #c5a059 50%, #9e7d3b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(197, 160, 89, 0.25);
+        }
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(26, 30, 36, 0.85) 0%, rgba(26, 30, 36, 0.95) 100%);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a1e24;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c5a059;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-gold selection:text-charcoal bg-cream">
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="fixed top-5 left-5 z-50 flex flex-col gap-3 pointer-events-none"></div>
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-charcoal-dark text-gold-light text-xs sm:text-sm py-2 px-4 text-center border-b border-gold/20 flex justify-between items-center max-w-full overflow-hidden">
+        <div class="container mx-auto flex justify-between items-center px-2">
+            <div class="flex items-center gap-4 text-gray-300">
+                <span><i class="fa-solid fa-location-dot text-gold ml-1"></i> دمياط - مفارق بورسعيد</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-clock text-gold ml-1"></i> يومياً من 10 ص حتى 11 م</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="https://www.instagram.com/mobliatco.elmostafa" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition flex items-center gap-1" title="انستغرام"><i class="fa-brands fa-instagram text-gold"></i><span class="hidden sm:inline">انستغرام</span></a>
+                <span class="text-gold/40">|</span>
+                <a href="https://www.tiktok.com/@mobliatco.elmostafa" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition flex items-center gap-1" title="تيك توك"><i class="fa-brands fa-tiktok text-gold"></i><span class="hidden sm:inline">تيك توك</span></a>
+                <span class="text-gold/40">|</span>
+                <a href="tel:01222224745" class="hover:text-gold transition"><i class="fa-solid fa-phone text-gold ml-1"></i> 01222224745</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-40 bg-charcoal/95 backdrop-blur-md border-b border-gold/30 text-white shadow-xl transition-all duration-300">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between gap-4">
+            
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-12 h-12 rounded-full bg-gradient-to-tr from-gold-dark via-gold to-gold-light p-0.5 shadow-lg group-hover:scale-105 transition-transform overflow-hidden flex-shrink-0">
+                    <img src="https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/465467509_122190051950085157_8203377334626919146_n.jpg?stp=dst-jpg_tt6&cstp=mx960x951&ctp=s960x951&_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Rc7ubzk5c5YQ7kNvwGjZu_H&_nc_oc=Adpl5TP5wKx0-eCFYSzVhBxxynjStie-_1LJsR2s0CXk3o3sFtYpY697o8UDkNqDusc&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=6Bj2D9Y3AE2xmEwWUFpLsw&_nc_ss=7b2a8&oh=00_AQNNlwZmC_PieGkcYciIkQZeGNCyO67y7qYqA83q_KiHrg&oe=6AC5F92A" 
+                         alt="شعار موبلياتكو المصطفى" 
+                         class="w-full h-full object-cover rounded-full" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/100x100/121519/c5a059?text=موبلياتكو';">
+                </div>
+                <div>
+                    <h1 class="font-black text-xl sm:text-2xl tracking-wide gold-gradient-text leading-tight">موبلياتكو المصطفى</h1>
+                    <p class="text-[10px] text-gray-400 font-medium">للأثاث والديكور الراقي - دمياط</p>
+                </div>
+            </a>
+
+            <!-- Search Bar (Desktop) -->
+            <div class="hidden lg:flex flex-1 max-w-md relative mx-6">
+                <input type="text" id="desktop-search" oninput="handleSearch(this.value)" placeholder="ابحث عن غرف نوم، سفرة، انتريهات..." class="w-full bg-charcoal-light border border-gold/30 rounded-full py-2 pr-10 pl-4 text-sm text-white focus:outline-none focus:border-gold transition-colors placeholder-gray-400">
+                <i class="fa-solid fa-magnifying-glass absolute right-3.5 top-2.5 text-gold text-sm"></i>
+            </div>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex items-center gap-6 font-semibold text-sm">
+                <a href="#hero" class="text-gold hover:text-gold-light transition">الرئيسية</a>
+                <a href="#categories" class="hover:text-gold transition">الأقسام</a>
+                <a href="#products" class="hover:text-gold transition">الكتالوج</a>
+                <a href="#custom-order" class="hover:text-gold transition flex items-center gap-1">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-75"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-gold"></span>
+                    </span>
+                    تصميم خاص
+                </a>
+                <a href="#contact" class="hover:text-gold transition">العنوان والتواصل</a>
+            </nav>
+
+            <!-- Call to Action Buttons -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/2011101370005?text=مرحباً%20معرض%20موبلياتكو%20المصطفى،%20أود%20الاستفسار%20عن%20معروضاتكم" target="_blank" class="bg-gradient-to-r from-emerald-600 to-emerald-500 hover:from-emerald-500 hover:to-emerald-400 text-white text-xs sm:text-sm font-bold py-2.5 px-4 rounded-full flex items-center gap-2 shadow-lg hover:shadow-emerald-900/30 transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">واتساب مباشر</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-gold text-2xl focus:outline-none p-1">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-charcoal-dark border-t border-gold/20 px-4 py-5 space-y-4">
+            <div class="relative mb-3">
+                <input type="text" id="mobile-search" oninput="handleSearch(this.value)" placeholder="ابحث في الكتالوج..." class="w-full bg-charcoal border border-gold/30 rounded-full py-2 pr-10 pl-4 text-sm text-white focus:outline-none focus:border-gold">
+                <i class="fa-solid fa-magnifying-glass absolute right-3.5 top-2.5 text-gold text-sm"></i>
+            </div>
+            <a href="#hero" onclick="toggleMobileMenu()" class="block text-gold font-semibold">الرئيسية</a>
+            <a href="#categories" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-gold">الأقسام الرئيسية</a>
+            <a href="#products" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-gold">كتالوج الموديلات</a>
+            <a href="#custom-order" onclick="toggleMobileMenu()" class="block text-gold font-bold">طلب تصنيع حسب الطلب</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block text-gray-200 hover:text-gold">العنوان ورقم التواصل</a>
+
+            <!-- Social Links in Mobile Drawer -->
+            <div class="flex items-center justify-center gap-4 pt-3 border-t border-gold/20">
+                <a href="https://www.facebook.com/AlmostafaaFurniture" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 hover:border-gold text-gold flex items-center justify-center transition" title="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/mobliatco.elmostafa" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 hover:border-gold text-pink-400 flex items-center justify-center transition" title="انستغرام"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@mobliatco.elmostafa" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 hover:border-gold text-white flex items-center justify-center transition" title="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://wa.me/2011101370005" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 hover:border-gold text-emerald-400 flex items-center justify-center transition" title="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section id="hero" class="relative bg-charcoal text-white py-20 lg:py-32 overflow-hidden border-b border-gold/30">
+        <!-- Background Image & Gradient Overlay -->
+        <div class="absolute inset-0 z-0 opacity-40 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=80');"></div>
+        <div class="absolute inset-0 hero-overlay z-0"></div>
+
+        <!-- Decorative Elements -->
+        <div class="absolute -top-24 -left-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 relative z-10 text-center max-w-4xl">
+            <div class="inline-flex items-center gap-2.5 bg-charcoal-light/80 border border-gold/40 px-5 py-2 rounded-full mb-6 backdrop-blur-sm">
+                <img src="https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/465467509_122190051950085157_8203377334626919146_n.jpg?stp=dst-jpg_tt6&cstp=mx960x951&ctp=s960x951&_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Rc7ubzk5c5YQ7kNvwGjZu_H&_nc_oc=Adpl5TP5wKx0-eCFYSzVhBxxynjStie-_1LJsR2s0CXk3o3sFtYpY697o8UDkNqDusc&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=6Bj2D9Y3AE2xmEwWUFpLsw&_nc_ss=7b2a8&oh=00_AQNNlwZmC_PieGkcYciIkQZeGNCyO67y7qYqA83q_KiHrg&oe=6AC5F92A" 
+                     alt="لوجو موبلياتكو" 
+                     class="w-6 h-6 rounded-full object-cover border border-gold" 
+                     onerror="this.onerror=null; this.style.display='none';">
+                <span class="text-xs sm:text-sm text-gold-light font-medium">الفخامة والجودة من قلعة الأثاث - دمياط</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+                أرقى تصاميم الأثاث والديكور <br>
+                <span class="gold-gradient-text">بأيدي صُناع دمياط المهرة</span>
+            </h1>
+
+            <p class="text-gray-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto leading-relaxed font-light">
+                نصنع لكم أجود أنواع غرف النوم، السفرة، الانتريهات، والدريسنج روم بخشب زان أحمر متين وتصاميم مميزة تجمع بين الفخامة العصرية والذوق الكلاسيكي الأصيل.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#products" class="w-full sm:w-auto bg-gradient-to-r from-gold-dark via-gold to-gold-light text-charcoal-dark font-extrabold px-8 py-4 rounded-full shadow-lg hover:shadow-gold/30 hover:scale-105 transition transform flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-images"></i>
+                    تصفح الكتالوج الجديد
+                </a>
+                <a href="#custom-order" class="w-full sm:w-auto bg-charcoal-light/90 border-2 border-gold text-gold hover:bg-gold hover:text-charcoal-dark font-bold px-8 py-3.5 rounded-full transition transform hover:scale-105 flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    نفذ تصميمك الخاص بالمقاس
+                </a>
+            </div>
+
+            <!-- Feature Badges Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 text-right">
+                <div class="bg-charcoal-light/60 border border-gold/20 p-4 rounded-2xl backdrop-blur-sm flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gold/20 text-gold flex items-center justify-center text-lg flex-shrink-0">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">خشب زان أحمر</h4>
+                        <p class="text-xs text-gray-400">متانة وجودة تعيش لسنوات</p>
+                    </div>
+                </div>
+
+                <div class="bg-charcoal-light/60 border border-gold/20 p-4 rounded-2xl backdrop-blur-sm flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gold/20 text-gold flex items-center justify-center text-lg flex-shrink-0">
+                        <i class="fa-solid fa-ruler-combined"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">تصنيع حسب المقاس</h4>
+                        <p class="text-xs text-gray-400">تفصيل خصيصاً لمساحة بيتك</p>
+                    </div>
+                </div>
+
+                <div class="bg-charcoal-light/60 border border-gold/20 p-4 rounded-2xl backdrop-blur-sm flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gold/20 text-gold flex items-center justify-center text-lg flex-shrink-0">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">شحن لكافة المحافظات</h4>
+                        <p class="text-xs text-gray-400">توصيل آمن وبأعلى احترافية</p>
+                    </div>
+                </div>
+
+                <div class="bg-charcoal-light/60 border border-gold/20 p-4 rounded-2xl backdrop-blur-sm flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gold/20 text-gold flex items-center justify-center text-lg flex-shrink-0">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm text-white">ضمان وأسعار منافسة</h4>
+                        <p class="text-xs text-gray-400">من المصنع بدمياط مباشر</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Main Categories Filter Section -->
+    <section id="categories" class="py-12 bg-cream-dark/50 border-b border-gold/10">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-gold-dark font-bold text-sm uppercase tracking-wider">تصفح حسب القسم</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-charcoal mt-1">تشكيلاتنا الرئيسية لعام 2026</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <!-- Categories Buttons Slider/Pills -->
+            <div class="flex items-center justify-center gap-2 sm:gap-3 flex-wrap" id="category-pills">
+                <button onclick="filterCategory('all', this)" class="category-pill active bg-gold text-charcoal font-bold px-5 py-2.5 rounded-full text-sm shadow-md transition">
+                    <i class="fa-solid fa-border-all ml-1.5"></i> الكل
+                </button>
+                <button onclick="filterCategory('bedrooms', this)" class="category-pill bg-white text-charcoal hover:bg-gold/20 border border-gray-300 font-semibold px-5 py-2.5 rounded-full text-sm transition">
+                    <i class="fa-solid fa-bed ml-1.5"></i> غرف نوم
+                </button>
+                <button onclick="filterCategory('dining', this)" class="category-pill bg-white text-charcoal hover:bg-gold/20 border border-gray-300 font-semibold px-5 py-2.5 rounded-full text-sm transition">
+                    <i class="fa-solid fa-utensils ml-1.5"></i> غرف سفرة
+                </button>
+                <button onclick="filterCategory('living', this)" class="category-pill bg-white text-charcoal hover:bg-gold/20 border border-gray-300 font-semibold px-5 py-2.5 rounded-full text-sm transition">
+                    <i class="fa-solid fa-couch ml-1.5"></i> انتريهات وصالونات
+                </button>
+                <button onclick="filterCategory('kids', this)" class="category-pill bg-white text-charcoal hover:bg-gold/20 border border-gray-300 font-semibold px-5 py-2.5 rounded-full text-sm transition">
+                    <i class="fa-solid fa-child-reaching ml-1.5"></i> غرف أطفال
+                </button>
+                <button onclick="filterCategory('dressing', this)" class="category-pill bg-white text-charcoal hover:bg-gold/20 border border-gray-300 font-semibold px-5 py-2.5 rounded-full text-sm transition">
+                    <i class="fa-solid fa-shirt ml-1.5"></i> دريسنج روم
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Showcase Gallery -->
+    <section id="products" class="py-16 bg-cream">
+        <div class="container mx-auto px-4">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+                <div>
+                    <h3 class="text-2xl font-bold text-charcoal">المنتجات والمعروضات الحالية</h3>
+                    <p class="text-sm text-gray-600">انقر على أي موديل للاطلاع على التفاصيل الكاملة أو الاستفسار السريع</p>
+                </div>
+                <div class="text-xs text-gray-500 font-medium">
+                    يتم عرض <span id="product-count" class="text-gold-dark font-bold">10</span> موديل متميز
+                </div>
+            </div>
+
+            <!-- Products Grid Container -->
+            <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Products dynamically rendered via JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Custom Order Section ("تصميم حسب الطلب") -->
+    <section id="custom-order" class="py-16 bg-charcoal text-white relative overflow-hidden">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto bg-charcoal-light/90 border border-gold/30 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+                
+                <div class="text-center mb-8">
+                    <div class="inline-block p-3 rounded-2xl bg-gold/10 text-gold mb-3">
+                        <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold gold-gradient-text">خدمة التفصيل والتصنيع حسب الطلب</h2>
+                    <p class="text-gray-300 text-sm sm:text-base mt-2">
+                        عجبتك صورة غرفه أو تصميم من النت؟ ارسل لنا التفاصيل والمقاسات وسنقوم بتصنيعها بورش المعرض بدمياط بنفس الدقة وبأعلى جودة خشب.
+                    </p>
+                </div>
+
+                <form id="custom-form" onsubmit="handleCustomOrderSubmit(event)" class="space-y-5">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <!-- Piece Category -->
+                        <div>
+                            <label class="block text-xs font-bold text-gold-light mb-2">نوع القطعة المطلوبة *</label>
+                            <select id="custom-category" required class="w-full bg-charcoal border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold">
+                                <option value="" disabled selected>اختر النوع...</option>
+                                <option value="غرفة نوم رئيسية">غرفة نوم رئيسية</option>
+                                <option value="غرفة سفرة كاملة">غرفة سفرة كاملة</option>
+                                <option value="انتريه / ركنة مودرن">انتريه / ركنة مودرن</option>
+                                <option value="غرفة أطفال / شبابي">غرفة أطفال / شبابي</option>
+                                <option value="دريسنج روم بمقاس خاص">دريسنج روم بمقاس خاص</option>
+                                <option value="قطعة ديكور منفردة (بوفيه / جزامة / طاولة)">قطعة ديكور منفردة</option>
+                            </select>
+                        </div>
+
+                        <!-- Preferred Wood -->
+                        <div>
+                            <label class="block text-xs font-bold text-gold-light mb-2">نوع الخشب / القماش المفضل</label>
+                            <select id="custom-wood" class="w-full bg-charcoal border border-gold/30 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-gold">
+                                <option value="خشب زان أحمر متين">خشب زان أحمر متين (موصى به)</option>
+                                <option value="MDF إسباني للقرص والدريسنج">MDF إسباني جودة ممتازة</option>
+                                <option value="دمج زان مع أرو إيطالي">دمج زان مع أرو إيطالي</option>
+                                <option value="ترك الاختيار لمهندس المعرض">ترك الاختيار لنصيحة المعرض</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Dimensions -->
+                    <div>
+                        <label class="block text-xs font-bold text-gold-light mb-2">المقاسات المتاحة في الغرفة (اختياري)</label>
+                        <input type="text" id="custom-dimensions" placeholder="مثلاً: الغرفة 4 متر في 3.5 متر أو عرض الدولاب 240 سم" class="w-full bg-charcoal border border-gold/30 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold">
+                    </div>
+
+                    <!-- Notes -->
+                    <div>
+                        <label class="block text-xs font-bold text-gold-light mb-2">ملاحظات إضافية / تفاصيل اللون والأقمشة</label>
+                        <textarea id="custom-notes" rows="3" placeholder="اكتب أي ملاحظات كطلب ألوان معينة أو تغيير في عدد الكراسي أو الأدراج..." class="w-full bg-charcoal border border-gold/30 rounded-xl px-4 py-3 text-sm text-white placeholder-gray-500 focus:outline-none focus:border-gold"></textarea>
+                    </div>
+
+                    <!-- File Upload Preview Simulation -->
+                    <div>
+                        <label class="block text-xs font-bold text-gold-light mb-2">إرفاق صورة التصميم (اختياري)</label>
+                        <div class="border-2 border-dashed border-gold/30 rounded-2xl p-4 text-center cursor-pointer hover:border-gold transition relative bg-charcoal/50">
+                            <input type="file" id="custom-file" onchange="previewUpload(this)" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+                            <i class="fa-solid fa-cloud-arrow-up text-gold text-2xl mb-1"></i>
+                            <p id="file-label" class="text-xs text-gray-300">اضغط هنا لاختيار صورة التصميم من جهازك</p>
+                            <img id="file-preview" class="hidden h-24 mx-auto mt-2 rounded-lg object-cover border border-gold/50">
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-extrabold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        إرسال مواصفات الطلب للحصول على المقايسة عبر الواتساب
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-16 bg-cream">
+        <div class="container mx-auto px-4">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-gold-dark font-bold text-sm uppercase">تفضلوا بزيارتنا</span>
+                <h2 class="text-3xl font-extrabold text-charcoal">معرض ومصانع موبلياتكو المصطفى</h2>
+                <div class="w-16 h-1 bg-gold mx-auto mt-2 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+                
+                <!-- Contact Info Card -->
+                <div class="bg-charcoal text-white rounded-3xl p-8 border border-gold/30 shadow-xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-2xl font-bold gold-gradient-text mb-6">معلومات التواصل المباشر</h3>
+                        
+                        <div class="space-y-6 text-sm">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/20 text-gold flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gold-light">عنوان المعرض بدمياط:</h4>
+                                    <p class="text-gray-300 mt-1">محافظة دمياط - مفارق بورسعيد - خلف عسل اللاتات - بجوار سوق الجمعة القديم.</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/20 text-gold flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gold-light">أرقام الهواتف والحجز:</h4>
+                                    <p class="text-gray-300 dir-ltr text-right mt-1 font-mono">
+                                        <a href="tel:01222224745" class="hover:text-gold">01222224745</a> <br>
+                                        <a href="tel:01101370005" class="hover:text-gold">01101370005</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/20 text-gold flex items-center justify-center text-lg flex-shrink-0">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gold-light">مواعيد العمل:</h4>
+                                    <p class="text-gray-300 mt-1">يومياً من الساعة 10:00 صباحاً حتى 11:00 مساءً.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Actions -->
+                    <div class="mt-8 pt-6 border-t border-gold/20 flex flex-wrap gap-3">
+                        <a href="https://wa.me/2011101370005" target="_blank" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-xl text-center text-xs sm:text-sm flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> محادثة واتساب
+                        </a>
+                        <a href="tel:01222224745" class="flex-1 bg-gold text-charcoal font-bold py-3 px-4 rounded-xl text-center text-xs sm:text-sm flex items-center justify-center gap-2 hover:bg-gold-light">
+                            <i class="fa-solid fa-phone"></i> اتصال هاتفي
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simulated Interactive Map Frame -->
+                <div class="bg-white rounded-3xl p-3 border border-gray-200 shadow-xl overflow-hidden min-h-[320px] flex flex-col">
+                    <div class="bg-charcoal text-gold text-xs font-bold py-2 px-4 rounded-t-2xl flex items-center justify-between">
+                        <span><i class="fa-solid fa-map-location-dot ml-1"></i> موقعنا بدمياط على الخريطة</span>
+                        <a href="https://maps.google.com/?q=Damietta+Egypt" target="_blank" class="underline hover:text-white">فتح في خرائط جوجل</a>
+                    </div>
+                    <div class="flex-1 relative bg-gray-100 rounded-b-2xl overflow-hidden">
+                        <iframe 
+                            class="w-full h-full min-h-[300px] border-0" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109267.43269430335!2d31.7580644!3d31.4164835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f99e3a6c6e7a2b%3A0x4a9d702334f590bc!2sDamietta%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1700000000000!5m2!1sen!2seg" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-charcoal-dark text-gray-400 border-t border-gold/20 pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-gray-800">
+                
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="https://scontent-hbe1-2.xx.fbcdn.net/v/t39.30808-6/465467509_122190051950085157_8203377334626919146_n.jpg?stp=dst-jpg_tt6&cstp=mx960x951&ctp=s960x951&_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=Rc7ubzk5c5YQ7kNvwGjZu_H&_nc_oc=Adpl5TP5wKx0-eCFYSzVhBxxynjStie-_1LJsR2s0CXk3o3sFtYpY697o8UDkNqDusc&_nc_zt=23&_nc_ht=scontent-hbe1-2.xx&_nc_gid=6Bj2D9Y3AE2xmEwWUFpLsw&_nc_ss=7b2a8&oh=00_AQNNlwZmC_PieGkcYciIkQZeGNCyO67y7qYqA83q_KiHrg&oe=6AC5F92A" 
+                             alt="لوجو موبلياتكو المصطفى" 
+                             class="w-10 h-10 rounded-full object-cover border border-gold p-0.5" 
+                             onerror="this.onerror=null; this.src='https://placehold.co/100x100/121519/c5a059?text=موبلياتكو';">
+                        <span class="font-bold text-xl text-white gold-gradient-text">موبلياتكو المصطفى</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-gray-400">
+                        معرض ومصانع أثاث وديكور رائدة بمحافظة دمياط. متخصصون في أرقى موديلات الأثاث العصري والكلاسيكي والتفصيل حسب الطلب بجودة استثنائية.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 border-r-2 border-gold pr-2">روابط سريعة</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#hero" class="hover:text-gold transition">الصفحة الرئيسية</a></li>
+                        <li><a href="#categories" class="hover:text-gold transition">أقسام الأثاث والموديلات</a></li>
+                        <li><a href="#custom-order" class="hover:text-gold transition">تصنيع وتفصيل حسب المقاس</a></li>
+                        <li><a href="#contact" class="hover:text-gold transition">عنوان المعرض بدمياط</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 border-r-2 border-gold pr-2">تابعنا على التواصل الاجتماعي</h4>
+                    <div class="flex gap-3">
+                        <a href="https://www.facebook.com/AlmostafaaFurniture" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 hover:border-gold text-gold flex items-center justify-center transition hover:scale-110" title="صفحة الفيسبوك">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mobliatco.elmostafa" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 hover:border-gold text-pink-400 flex items-center justify-center transition hover:scale-110" title="حساب الانستغرام">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@mobliatco.elmostafa" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 hover:border-gold text-white flex items-center justify-center transition hover:scale-110" title="حساب التيك توك">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://wa.me/2011101370005" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-charcoal border border-gold/30 hover:border-gold text-emerald-400 flex items-center justify-center transition hover:scale-110" title="محادثة الواتساب">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-6 text-center text-xs text-gray-500 flex flex-col sm:flex-row justify-between items-center gap-2">
+                <p>© 2026 موبلياتكو المصطفى للأثاث والديكور - جميع الحقوق محفوظة</p>
+                <p>تصميم مخصص لمعرض دمياط الرئيسي</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quick View Product Modal -->
+    <div id="quick-view-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4 transition-opacity">
+        <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 relative border border-gold/30 shadow-2xl animate-fade-in">
+            <button onclick="closeQuickView()" class="absolute top-4 left-4 w-9 h-9 rounded-full bg-gray-100 text-gray-700 hover:bg-gold hover:text-charcoal flex items-center justify-center text-lg transition">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2">
+                <div class="relative rounded-2xl overflow-hidden bg-gray-100 h-64 md:h-auto border">
+                    <img id="modal-img" src="" alt="" class="w-full h-full object-cover">
+                    <span id="modal-tag" class="absolute top-3 right-3 bg-gold text-charcoal text-[10px] font-bold px-2.5 py-1 rounded-full"></span>
+                </div>
+
+                <div class="flex flex-col justify-between">
+                    <div>
+                        <span id="modal-category" class="text-xs font-bold text-gold-dark uppercase"></span>
+                        <h3 id="modal-title" class="text-xl font-extrabold text-charcoal mt-1"></h3>
+                        
+                        <div class="my-4 space-y-2 text-xs text-gray-600 bg-cream p-3 rounded-xl border border-gray-200">
+                            <p><strong class="text-charcoal">نوع الخشب:</strong> <span id="modal-wood">خشب زان أحمر متين</span></p>
+                            <p><strong class="text-charcoal">القماش والتنجيد:</strong> <span id="modal-fabric">قطيفة إسباني / هيدروليك</span></p>
+                            <p><strong class="text-charcoal">الضمان:</strong> <span id="modal-warranty">5 سنوات ضد عيوب التصنيع</span></p>
+                        </div>
+
+                        <p id="modal-desc" class="text-xs text-gray-500 leading-relaxed mb-4"></p>
+                    </div>
+
+                    <div class="space-y-2 pt-4 border-t border-gray-100">
+                        <a id="modal-whatsapp-btn" href="#" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-center text-xs flex items-center justify-center gap-2 shadow">
+                            <i class="fa-brands fa-whatsapp text-lg"></i>
+                            استفسر عن هذا الموديل عبر الواتساب
+                        </a>
+                        <button onclick="copyProductLink()" class="w-full bg-gray-100 hover:bg-gray-200 text-charcoal font-semibold py-2 rounded-xl text-xs flex items-center justify-center gap-1">
+                            <i class="fa-solid fa-share-nodes"></i> نسخ رابط الموديل
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating WhatsApp Action Button -->
+    <a href="https://wa.me/2011101370005?text=مرحباً،%20أود%20الاستفسار%20عن%20منتجات%20معرض%20موبلياتكو%20المصطفى" target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl transition transform hover:scale-110 group">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute right-16 bg-charcoal text-white text-xs font-bold py-1.5 px-3 rounded-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap shadow-lg border border-gold/30 pointer-events-none">
+            تحدث معنا فوراً
+        </span>
+    </a>
+
+    <script>
+        // Data Array for Sample Furniture Showcase Items
+        const productsData = [
+            {
+                id: 1,
+                title: "غرفة نوم مودرن ملكية 'فيرونا'",
+                category: "bedrooms",
+                categoryLabel: "غرف نوم",
+                image: "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800&q=80",
+                wood: "خشب زان أحمر طبيعي + MDF إسباني",
+                fabric: "جلد وقماش قطيفة هيدروليك معالَج",
+                warranty: "5 سنوات ضمان شامل",
+                desc: "تصميم مودرن فاخر يشمل دولاب هيدروليك 3 ضلفة، سرير بمقاس 180 سم، 2 كومود، تسريحة راقية مع مرآة مضيئة وبوف مريح.",
+                tag: "الأكثر مبيعاً"
+            },
+            {
+                id: 2,
+                title: "غرفة سفرة فاخرة 'الزمردة'",
+                category: "dining",
+                categoryLabel: "غرف سفرة",
+                image: "https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=800&q=80",
+                wood: "خشب زان أحمر روماني",
+                fabric: "كتان إسباني ممتاز ضد البقع",
+                warranty: "5 سنوات ضمان",
+                desc: "تتكون من طاولة سفرة تسع 8 أفراد، بوفيه بمساحة تخزين كبيرة، ونيش عصري بتطعيمات إضاءة LED وستيل ذهبي.",
+                tag: "جديد 2026"
+            },
+            {
+                id: 3,
+                title: "طقم انتريه مودرن 'لافي'",
+                category: "living",
+                categoryLabel: "انتريهات وصالونات",
+                image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80",
+                wood: "شاسيه زان أحمر شديد التحمل",
+                fabric: "قماش جلد مقلوب إسباني فاخر",
+                warranty: "3 سنوات ضمان",
+                desc: "يتكون من كنبة ثلاثية، كنبة ثنائية، و2 فوتيه أنيق مع طاولات جانبية بنفس الطراز العالي.",
+                tag: "عرض خاص"
+            },
+            {
+                id: 4,
+                title: "غرفة نوم أطفال 'سحاب'",
+                category: "kids",
+                categoryLabel: "غرف أطفال",
+                image: "https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=800&q=80",
+                wood: "زان مع MDF خالي من المواد الضارة",
+                fabric: "دهانات دوكو أفراني صحية للأطفال",
+                warranty: "5 سنوات",
+                desc: "تشمل سريرين مقاس 120 سم، دولاب مدمج بـ 3 ضلف، ومكتب دراسي أنيق بأدراج منظم.",
+                tag: "عملية وجذابة"
+            },
+            {
+                id: 5,
+                title: "دريسنج روم إيطالي فاخر",
+                category: "dressing",
+                categoryLabel: "دريسنج روم",
+                image: "https://images.unsplash.com/photo-1558997519-83ea9252edf8?auto=format&fit=crop&w=800&q=80",
+                wood: "MDF إسباني مقاوم للرطوبة + زان",
+                fabric: "إكسسوارات ومجاري إغلاق صامت هيدروليك",
+                warranty: "5 سنوات",
+                desc: "تصميم مخصص حسب مساحة الغرفة مع تقطعات استراتيجية للتعليق، الأرفف، وحفظ الأحذية والساعات.",
+                tag: "تصنيع حسب المقاس"
+            },
+            {
+                id: 6,
+                title: "طقم صالون مذهب 'الملكي'",
+                category: "living",
+                categoryLabel: "انتريهات وصالونات",
+                image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80",
+                wood: "خشب زان أحمر محفور باليد",
+                fabric: "قماش قطيفة مذهب وثقيل",
+                warranty: "5 سنوات",
+                desc: "صالون كلاسيكي راقي حفر دمياطي يدوي مع ورق ذهب عالي البريق وإسفنج كثافة 35 لمقاومة الهبوط.",
+                tag: "كلاسيك فخم"
+            },
+            {
+                id: 7,
+                title: "غرفة نوم مودرن 'روما'",
+                category: "bedrooms",
+                categoryLabel: "غرف نوم",
+                image: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80",
+                wood: "خشب زان أحمر أصلاني",
+                fabric: "أقمشة كتان مع جلد حراري",
+                warranty: "5 سنوات",
+                desc: "غرفة نوم كاملة هادئة بالألوان البيج والرمادي مع إضاءات خفية خافته وتفاصيل ستيل جولد.",
+                tag: "مودرن راقي"
+            },
+            {
+                id: 8,
+                title: "ركنة مودرن حرف L 'مودينا'",
+                category: "living",
+                categoryLabel: "انتريهات وصالونات",
+                image: "https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&w=800&q=80",
+                wood: "شاسيه زان أحمر",
+                fabric: "قماش هيدروليك معالج سهل التنظيف",
+                warranty: "3 سنوات",
+                desc: "ركنة مريحة بمقاس 3 متر × 2 متر مع ميكانيزم شيزلونج متحرك وبف إضافي.",
+                tag: "الأعلى طلباً"
+            }
+        ];
+
+        // Current active category filter state
+        let currentCategory = 'all';
+        let searchQuery = '';
+
+        // Render products into grid
+        function renderProducts() {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = '';
+
+            const filtered = productsData.filter(p => {
+                const matchCategory = currentCategory === 'all' || p.category === currentCategory;
+                const matchSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                                    p.desc.toLowerCase().includes(searchQuery.toLowerCase());
+                return matchCategory && matchSearch;
+            });
+
+            document.getElementById('product-count').textContent = filtered.length;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 text-gray-500">
+                        <i class="fa-solid fa-box-open text-4xl mb-3 text-gold"></i>
+                        <p class="font-bold">لم نجد موديلات تطابق هذا البحث أو القسم</p>
+                        <button onclick="filterCategory('all', document.querySelectorAll('.category-pill')[0])" class="mt-3 text-xs bg-gold text-charcoal font-bold px-4 py-2 rounded-full">عرض كل الكتالوج</button>
+                    </div>
+                `;
+                return;
+            }
+
+            filtered.forEach(p => {
+                const whatsappUrl = `https://wa.me/2011101370005?text=${encodeURIComponent(`مرحباً معرض موبلياتكو المصطفى، أود الاستفسار عن سعر ومواصفات (${p.title})`)}`;
+
+                const card = document.createElement('div');
+                card.className = "bg-white rounded-2xl overflow-hidden border border-gray-200 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group";
+                card.innerHTML = `
+                    <div>
+                        <!-- Card Image Header -->
+                        <div class="relative h-56 overflow-hidden bg-gray-100">
+                            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 bg-charcoal/90 text-gold text-[10px] font-bold px-3 py-1 rounded-full border border-gold/30">
+                                ${p.tag}
+                            </span>
+                            <button onclick="openQuickView(${p.id})" class="absolute bottom-3 left-3 bg-white/90 hover:bg-gold text-charcoal hover:text-white p-2.5 rounded-full text-xs shadow-md transition">
+                                <i class="fa-solid fa-eye"></i> معاينة سريعة
+                            </button>
+                        </div>
+
+                        <!-- Card Content -->
+                        <div class="p-5">
+                            <span class="text-[11px] font-bold text-gold-dark uppercase tracking-wider">${p.categoryLabel}</span>
+                            <h4 class="font-bold text-base text-charcoal mt-1 line-clamp-1">${p.title}</h4>
+                            <p class="text-xs text-gray-500 mt-2 line-clamp-2 leading-relaxed">${p.desc}</p>
+
+                            <!-- Mini Specs -->
+                            <div class="mt-4 pt-3 border-t border-gray-100 flex flex-wrap gap-2 text-[11px] text-gray-600">
+                                <span class="bg-cream px-2 py-1 rounded border border-gray-200"><i class="fa-solid fa-tree text-gold ml-1"></i>${p.wood.split('+')[0]}</span>
+                                <span class="bg-cream px-2 py-1 rounded border border-gray-200"><i class="fa-solid fa-shield text-gold ml-1"></i>${p.warranty}</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Footer Actions -->
+                    <div class="p-5 pt-0">
+                        <a href="${whatsappUrl}" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded-xl text-xs flex items-center justify-center gap-2 transition shadow">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            استفسر عن السعر عبر واتساب
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Category Filter handler
+        function filterCategory(category, btnElement) {
+            currentCategory = category;
+            
+            // Toggle buttons state styling
+            document.querySelectorAll('.category-pill').forEach(btn => {
+                btn.classList.remove('bg-gold', 'text-charcoal', 'font-bold', 'shadow-md');
+                btn.classList.add('bg-white', 'text-charcoal', 'border-gray-300');
+            });
+
+            btnElement.classList.remove('bg-white', 'border-gray-300');
+            btnElement.classList.add('bg-gold', 'text-charcoal', 'font-bold', 'shadow-md');
+
+            renderProducts();
+        }
+
+        // Live Search Input handler
+        function handleSearch(val) {
+            searchQuery = val;
+            renderProducts();
+        }
+
+        // Quick View Modal
+        function openQuickView(id) {
+            const product = productsData.find(p => p.id === id);
+            if (!product) return;
+
+            document.getElementById('modal-img').src = product.image;
+            document.getElementById('modal-title').textContent = product.title;
+            document.getElementById('modal-category').textContent = product.categoryLabel;
+            document.getElementById('modal-tag').textContent = product.tag;
+            document.getElementById('modal-wood').textContent = product.wood;
+            document.getElementById('modal-fabric').textContent = product.fabric;
+            document.getElementById('modal-warranty').textContent = product.warranty;
+            document.getElementById('modal-desc').textContent = product.desc;
+
+            const whatsappUrl = `https://wa.me/2011101370005?text=${encodeURIComponent(`مرحباً معرض موبلياتكو المصطفى، أود استفسار تفصيلي عن موديل (${product.title})`)}`;
+            document.getElementById('modal-whatsapp-btn').href = whatsappUrl;
+
+            document.getElementById('quick-view-modal').classList.remove('hidden');
+        }
+
+        function closeQuickView() {
+            document.getElementById('quick-view-modal').classList.add('hidden');
+        }
+
+        // Copy Product Link Notification
+        function copyProductLink() {
+            document.execCommand('copy');
+            showToast('تم نسخ الرابط بنجاح!');
+        }
+
+        // Custom Order Form Handler (WhatsApp Builder)
+        function handleCustomOrderSubmit(event) {
+            event.preventDefault();
+
+            const category = document.getElementById('custom-category').value;
+            const wood = document.getElementById('custom-wood').value;
+            const dimensions = document.getElementById('custom-dimensions').value || 'غير محددة';
+            const notes = document.getElementById('custom-notes').value || 'لا يوجد';
+
+            const message = `طلب مقايسة وتصنيع خاص بدمياط 🛠️:\n- القطعة: ${category}\n- نوع الخشب المفضل: ${wood}\n- المقاسات: ${dimensions}\n- ملاحظات إضافية: ${notes}`;
+
+            const url = `https://wa.me/2011101370005?text=${encodeURIComponent(message)}`;
+            
+            showToast('جاري توجيهك إلى واتساب لإرسال المقايسة...');
+            setTimeout(() => {
+                window.open(url, '_blank');
+            }, 1000);
+        }
+
+        // File upload simulation preview
+        function previewUpload(input) {
+            if (input.files && input.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const img = document.getElementById('file-preview');
+                    img.src = e.target.result;
+                    img.classList.remove('hidden');
+                    document.getElementById('file-label').textContent = `تم اختيار: ${input.files[0].name}`;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Toggle Mobile Navigation Drawer
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('menu-icon');
+            
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                menu.classList.add('hidden');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+
+        // Toast Feedback Message
+        function showToast(msg) {
+            const container = document.getElementById('toast-container');
+            const toast = document.createElement('div');
+            toast.className = "bg-charcoal border border-gold text-white text-xs font-bold px-4 py-3 rounded-xl shadow-2xl flex items-center gap-2 pointer-events-auto animate-bounce";
+            toast.innerHTML = `<i class="fa-solid fa-circle-check text-gold text-base"></i> ${msg}`;
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.remove();
+            }, 3500);
+        }
+
+        // Initialize Products on Load
+        window.onload = function() {
+            renderProducts();
+        };
+    </script>
+</body>
+</html>
